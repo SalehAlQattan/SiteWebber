@@ -45,6 +45,7 @@ ul {
 
 .nav__whatsapp {
   color: #25d366;
+  font-size: 4.5rem;
 }
 
 .nav__phone {
@@ -63,7 +64,6 @@ ul {
   overflow: hidden;
   text-transform: uppercase;
   display: flex;
-  /* gap: 7rem; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -94,5 +94,92 @@ ul {
   }
   .nav__toggler {
     display: none;
+  }
+}
+
+/* Greeting */
+
+.container {
+  background: rgb(46, 152, 238);
+  background: linear-gradient(
+    180deg,
+    rgba(46, 152, 238, 1) 19%,
+    rgba(47, 191, 191, 1) 90%
+  );
+}
+
+.greeting {
+  width: 90%;
+  margin: 0 auto;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.greeting__title {
+  font-size: 3.5rem;
+  padding-top: 2rem;
+  color: #fff;
+}
+
+.greeting__subtitle {
+  color: #25d366;
+  text-align: center;
+}
+
+.greeting__showcase {
+}
+
+.greeting__showcase__number {
+  color: #4452e0;
+  font-size: 5rem;
+}
+
+.greeting__showcase__work {
+  color: #fff;
+}
+
+.greeting__showcase__btn {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 40%;
+  height: 40%;
+  border-radius: 1rem;
+  background: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #60d7a1;
+}
+
+@media screen and (min-width: 768px) {
+  .greeting {
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .greeting__heading {
+    grid-column: 1/-1;
+  }
+
+  .greeting__title {
+    font-size: 5rem;
+  }
+
+  .greeting__subtitle {
+    font-size: 3rem;
+  }
+  .greeting__showcase__number {
+    font-size: 6rem;
+  }
+  .greeting__showcase__work {
+    font-size: 2.5rem;
+  }
+  .greeting__showcase__btn {
+    grid-column: 1/-1;
+    width: 20%;
+    height: 15%;
   }
 }
