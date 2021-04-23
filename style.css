@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* navbar */
+
+.nav {
+  background: hsl(198, 76%, 90%);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem;
+  font-size: 3.5rem;
+}
+
+.nav__logo {
+  width: 4rem;
+  cursor: pointer;
+}
+
+.nav__whatsapp {
+  color: #25d366;
+}
+
+.nav__phone {
+  color: #27aae1;
+}
+
+.nav__toggler {
+  color: #808285;
+  cursor: pointer;
+}
+
+.nav__list {
+  list-style: none;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  display: flex;
+  gap: 7rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.nav__list--expand {
+  margin-top: 2rem;
+  max-height: 100vh;
+  height: 100vh;
+}
+
+.nav__item {
+}
+.nav__link {
+  color: #808285;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__list {
+    max-height: 100vh;
+    width: auto;
+    flex-direction: row;
+    gap: 3rem;
+    font-size: 2rem;
+  }
+  .nav__toggler {
+    display: none;
+  }
+}
