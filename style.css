@@ -63,7 +63,7 @@ ul {
   overflow: hidden;
   text-transform: uppercase;
   display: flex;
-  gap: 7rem;
+  /* gap: 7rem; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -73,10 +73,10 @@ ul {
 .nav__list--expand {
   margin-top: 2rem;
   max-height: 100vh;
-  height: 100vh;
 }
 
 .nav__item {
+  margin-bottom: 2rem;
 }
 .nav__link {
   color: #808285;
@@ -87,8 +87,10 @@ ul {
     max-height: 100vh;
     width: auto;
     flex-direction: row;
-    gap: 3rem;
     font-size: 2rem;
+  }
+  .nav__item {
+    margin-left: 3rem;
   }
   .nav__toggler {
     display: none;
