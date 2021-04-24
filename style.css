@@ -100,13 +100,14 @@ ul {
 
 /* Greeting */
 
-.container {
+.greeting--container {
   background: rgb(46, 152, 238);
   background: linear-gradient(
     180deg,
     rgba(46, 152, 238, 1) 19%,
     rgba(47, 191, 191, 1) 90%
   );
+  clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
 }
 
 .greeting {
@@ -182,5 +183,69 @@ ul {
     grid-column: 1/-1;
     width: 20%;
     height: 15%;
+  }
+}
+
+/* What we do section */
+
+.whatwedo--container {
+  background: rgb(46, 152, 238);
+  background: linear-gradient(
+    0deg,
+    rgba(46, 152, 238, 1) 19%,
+    rgba(47, 191, 191, 1) 90%
+  );
+  margin-top: 1rem;
+  clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
+}
+
+.whatwedo {
+  width: 90%;
+  padding: 7rem 0;
+  margin: 0 auto;
+}
+
+.whatwedo__heading {
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+  font-size: 5rem;
+}
+
+.whatwedo__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.whatwedo__card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 20rem;
+}
+
+.whatwedo__card__icon {
+  color: #2e97ef;
+}
+
+.whatwedo__card__heading {
+  color: #808285;
+}
+
+.whatwedo__card__subheading {
+  text-align: center;
+  color: #808285;
+  width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .whatwedo__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
