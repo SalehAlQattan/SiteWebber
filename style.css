@@ -143,10 +143,9 @@ ul {
 }
 
 .greeting__showcase__btn {
-  display: grid;
-  grid-template-columns: 5fr 1fr;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-items: center;
   width: 50%;
   height: 40%;
   border-radius: 1rem;
@@ -224,8 +223,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-around;
   height: 20rem;
 }
 
