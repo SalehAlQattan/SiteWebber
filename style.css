@@ -114,14 +114,14 @@ ul {
 .greeting {
   width: 90%;
   margin: 0 auto;
-  height: 80vh;
+  height: 650px;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
 }
 
 .greeting__title {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   padding-top: 2rem;
   color: #fff;
 }
