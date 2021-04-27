@@ -108,7 +108,7 @@ ul {
     rgba(46, 152, 238, 1) 19%,
     rgba(47, 191, 191, 1) 90%
   );
-  clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
 }
 
 .greeting {
@@ -197,12 +197,12 @@ ul {
     rgba(47, 191, 191, 1) 90%
   );
   margin-top: 1rem;
-  clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 5%, 100% 93%, 0% 100%);
 }
 
 .whatwedo {
   width: 90%;
-  padding: 7rem 0;
+  padding: 9rem 0;
   margin: 0 auto;
 }
 
@@ -247,5 +247,95 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+/* How We Work */
+
+.howwework--container {
+  background: rgb(46, 152, 238);
+  background: linear-gradient(
+    180deg,
+    rgba(46, 152, 238, 1) 19%,
+    rgba(47, 191, 191, 1) 90%
+  );
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+}
+
+.howwework {
+  width: 90%;
+  margin: 0 auto;
+  padding: 9rem 0;
+}
+
+.howwework__heading {
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+}
+
+.howwework__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  color: #808285;
+}
+
+.howwework__card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 20rem;
+}
+
+.howwework__card__number {
+  color: #2e97ef;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.howwework__card__heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.howwework__card__subheading {
+  width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .howwework__cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0.5rem;
+  }
+  .howwework__card--one {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .howwework__card--two {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .howwework__card--three {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .howwework__card--four {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  .howwework__card--five {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .howwework__card--six {
+    grid-column: 2/3;
+    grid-row: 6/7;
   }
 }
