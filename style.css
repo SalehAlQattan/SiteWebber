@@ -103,12 +103,6 @@ ul {
 
 .greeting--container {
   background: rgb(46, 152, 238);
-  background: linear-gradient(
-    180deg,
-    rgba(46, 152, 238, 1) 19%,
-    rgba(47, 191, 191, 1) 90%
-  );
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
 }
 
 .greeting {
@@ -190,14 +184,7 @@ ul {
 /* What we do section */
 
 .whatwedo--container {
-  background: rgb(46, 152, 238);
-  background: linear-gradient(
-    0deg,
-    rgba(46, 152, 238, 1) 19%,
-    rgba(47, 191, 191, 1) 90%
-  );
-  margin-top: 1rem;
-  clip-path: polygon(0 0, 100% 5%, 100% 93%, 0% 100%);
+  background: rgba(47, 191, 191, 1) 90%;
 }
 
 .whatwedo {
@@ -254,12 +241,6 @@ ul {
 
 .howwework--container {
   background: rgb(46, 152, 238);
-  background: linear-gradient(
-    180deg,
-    rgba(46, 152, 238, 1) 19%,
-    rgba(47, 191, 191, 1) 90%
-  );
-  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
 }
 
 .howwework {
