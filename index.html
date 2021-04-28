@@ -216,28 +216,37 @@
             <p class="reachus__icons__text">Click To E-Mail</p>
           </div>
         </div>
-        <form data-netlify="true" class="reachus__form" method="post">
+        <form
+          name="ContactUs"
+          data-netlify="true"
+          class="reachus__form"
+          method="post"
+        >
           <input class="reachus__form__input" placeholder="Name" type="text" />
           <input
             class="reachus__form__input"
             placeholder="Mobile"
             type="number"
             inputmode="numeric"
+            name="name"
           />
           <input
             class="reachus__form__input"
             placeholder="Email"
             type="email"
+            name="email"
           />
           <input
             class="reachus__form__input"
             placeholder="Subject"
             type="text"
+            name="subject"
           />
           <input
             class="reachus__form__input"
             placeholder="Message"
             type="text"
+            name="message"
           />
           <button class="reachus__form__btn" type="submit">
             Send <i class="fa fa-check"></i>
