@@ -288,6 +288,7 @@ ul {
 
 .howwework__card__subheading {
   width: 80%;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
