@@ -85,6 +85,7 @@ ul {
 }
 .nav__link {
   color: #808285;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
